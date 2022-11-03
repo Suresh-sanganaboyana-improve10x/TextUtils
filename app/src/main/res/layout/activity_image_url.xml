@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="18dp"
+    tools:context=".ImageUrlActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Image Url"
+        android:textColor="#050505"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/enter_image_url_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Enter image Url"
+        android:inputType="textPersonName"
+        android:textColor="#474646"
+        android:textColorHint="#292727" />
+
+    <Button
+        android:id="@+id/preview_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#1EC1BC"
+        android:text="Preview"
+        android:textAllCaps="false" />
+
+    <ImageView
+        android:id="@+id/image_view_img"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="false"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher_background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/flip_horizontal_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1EC1BC"
+            android:text="Flip Harizontal"
+            android:textAllCaps="false"
+            android:textSize="8sp" />
+
+        <ImageButton
+            android:id="@+id/left_rotate_img_btn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#1EC1BC"
+            app:srcCompat="@drawable/ic_baseline_rotate_left_24" />
+
+        <ImageButton
+            android:id="@+id/right_rotate_img_btn"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="#1EC1BC"
+            app:srcCompat="@drawable/ic_baseline_rotate_right_24" />
+
+        <Button
+            android:id="@+id/flip_vertical_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#1EC1BC"
+            android:text="Flip Vertical"
+            android:textAllCaps="false"
+            android:textSize="8sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
